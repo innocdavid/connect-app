@@ -3,6 +3,7 @@ import HomeViewVue from '@/views/HomeView.vue';
 import SignupViewVue from '@/views/SignupView.vue';
 import LoginViewVue from '@/views/LoginView.vue';
 import FeedViewVue from '@/views/FeedView.vue';
+import MessageView from '@/views/MessageView.vue';
 
 
 const router = createRouter({
@@ -27,6 +28,11 @@ const router = createRouter({
       path: '/feed',
       name: 'feed',
       component: FeedViewVue
+    },
+    {
+      path: '/message',
+      name: 'message',
+      component: MessageView
     }
   ]
 })

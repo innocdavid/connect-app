@@ -4,6 +4,7 @@ import SignupViewVue from '@/views/SignupView.vue';
 import LoginViewVue from '@/views/LoginView.vue';
 import FeedViewVue from '@/views/FeedView.vue';
 import MessageView from '@/views/MessageView.vue';
+import SearchView from '@/views/SearchView.vue';
 
 
 const router = createRouter({
@@ -33,6 +34,11 @@ const router = createRouter({
       path: '/message',
       name: 'message',
       component: MessageView
+    },
+    {
+      path: '/search',
+      name: 'search',
+      component: SearchView
     }
   ]
 })

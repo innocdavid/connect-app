@@ -94,45 +94,8 @@
             </div>
         </div>
         <div class="main-right col-span-1 space-y-4">
-            <div class="p-4 bg-white border border-gray-200 rounded-lg">
-                <h3 class="mb-6 text-xl">People you may now</h3>
-
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <img src="https://i.pravatar.cc/300?img=70" class="w-[40px] rounded-full" />
-                            <p class="text-xs"><strong>Code With Innoc</strong></p>
-                        </div>
-                        <a href="#" class="py-2 px-3 bg-purple-600 text-white text-xs rounded-lg">Show</a>
-
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <img src="https://i.pravatar.cc/300?img=70" class="w-[40px] rounded-full" />
-                            <p class="text-xs"><strong>Code With Innoc</strong></p>
-                        </div>
-                        <a href="#" class="py-2 px-3 bg-purple-600 text-white text-xs rounded-lg">Show</a>
-
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <img src="https://i.pravatar.cc/300?img=70" class="w-[40px] rounded-full" />
-                            <p class="text-xs"><strong>Code With Innoc</strong></p>
-                        </div>
-                        <a href="#" class="py-2 px-3 bg-purple-600 text-white text-xs rounded-lg">Show</a>
-
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <img src="https://i.pravatar.cc/300?img=70" class="w-[40px] rounded-full" />
-                            <p class="text-xs"><strong>Code With Innoc</strong></p>
-                        </div>
-                        <a href="#" class="py-2 px-3 bg-purple-600 text-white text-xs rounded-lg">Show</a>
-
-                    </div>
-                </div>
-
-            </div>
+            <!-- People you may know -->
+            <PeopleYouMayKnow />
             <div class="p-4 bg-white border border-gray-200 rounded-l">
                 <h3 class="mb-6 text-xl">Trending</h3>
 
@@ -174,3 +137,11 @@
         </div>
     </div>
 </template>
+<script>
+    import PeopleYouMayKnow from '@/components/PeopleYouMayKnow.vue';
+
+    export default {
+        name: 'FeedView',
+        components: { PeopleYouMayKnow, }
+    }
+</script>

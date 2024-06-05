@@ -52,7 +52,7 @@
                             placeholder="Please confirm your password"
                         >
                     </div>
-                    <template>
+                    <template v-if="errors.length > 0">
                         <div class="bg-red-300 text-white rounded-lg p-6">
                             <p v-for="error in errors" :key="error">{{ error }}</p>
                         </div>

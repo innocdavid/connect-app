@@ -17,12 +17,17 @@ def signup(resquest):
         'password1': data.get('password1'),
         'password2': data.get('password2')
     })
+    print(form)
 
     if form.is_valid():
+        print('saving data')
         form.save()
+        print('saving', form.save())
+        print('data saved')
 
         #send verification error later
     else:
+        print('error data not saved')
         message = 'error in creating a user'
 
     return JsonResponse({'status': message})

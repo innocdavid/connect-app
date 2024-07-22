@@ -117,9 +117,10 @@ export default {
             }
 
             if (this.errors.length === 0) {
-                axios.post('/api/signup/', this.form)
+                axios.post('http://localhost:8000/api/signup/', this.form)
                     .then(response => {
-                        if (response.data.message === 'success') {
+                        console.log(response.status)
+                        if (response.status === 'success') {
                             this.toastStore.showToast(5000, 'Success', 'bg-emerald-500');
 
                             //reset fields
